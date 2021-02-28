@@ -11,11 +11,11 @@ ie Rational =type(a)/type(a).
 
 Quotients.hh: Quotients of rings
 
-ie Quoteint = type(a) % type(b).
+ie Quotient = type(a) % type(b).
 
 For convenience Residue.hh also computes the above but with type restricted to integral types.
 
-Polynomial.hh: Rings over arbitrary filed types.
+Polynomial.hh: Rings over arbitrary field types.
 
 With these once can build other Field types, eg rational functions, finite fields.
 ******************************************************************************************************
