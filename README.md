@@ -1,5 +1,4 @@
 # Algebraic Template Library
-******************************************************************************************************
 
 Header files for algebraic structures and symbolic computation in C++.
 Attempts algebraic completeness through generic programming and operator overloading. 
