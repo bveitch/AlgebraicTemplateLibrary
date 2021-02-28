@@ -352,45 +352,7 @@ int main (int argc, char *argv[]) {
 	else{
 		std::cerr << "Test failed" << std::endl;
 	}
-	/* polyI p1(1,2,1);
-	std::cout << "p1: " << std::endl;
-	std::cout << p1 << std::endl;
-	p1*=3;
-	std::cout << "p1*3: " << std::endl;
-	std::cout << p1 << std::endl;
-
-	vector<int> c2 { 1, 2, 3, 4};
-	polyI p2(c2);
 	
-	std::cout << "p2: " << std::endl;
-	std::cout << p2 << std::endl;
-	p1+=p2;
-	std::cout << "p1+p2: " << std::endl;
-	std::cout << p1 << std::endl;
-	p1-=p2;
-	std::cout << "p1+(p2-p2): " << std::endl;
-	std::cout << p1 << std::endl;
-	
-	p2*=p1;
-	std::cout << "p2*=p1: " << std::endl;
-	std::cout << p2 << std::endl;
-	polyI p3=p2;
-	p2/=p1;
-	std::cout << "p2/=p1: " << std::endl;
-	std::cout << p2 << std::endl;
-	p3%=p1;
-	std::cout << "p2%=p1: " << std::endl;
-	std::cout << p3 << std::endl;
-	p2.Deriv();
-	std::cout << "Dp2: " << std::endl;
-	std::cout << p2 << std::endl;
-	std::cout << p2(-1) << std::endl;
-	std::cout << p2(0) << std::endl;
-	std::cout << p2(1) << std::endl;
-	polyI p4=p2*p2*p1;
-	std::cout << p4 << std::endl;
-	polyI p5=p2*p2/p1;
-	std::cout << p5 << std::endl; */
 	return 0;
 }
 
