@@ -22,5 +22,8 @@ $(TARGET): $(OBJECTS)
 test: test_residue.o
 	$(CC) -o $@ $^ $(CPPFLAGS) $(LIBS)
 
+testMersenne: test_MersenneModBits.o
+	$(CC) -o $@ $^ $(CPPFLAGS) $(LIBS)
+	
 clean:
 	-rm -f *.o

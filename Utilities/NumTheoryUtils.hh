@@ -87,5 +87,46 @@ namespace NTUtils {
 		else if( (n & 1) == 1) return v*fast_exp_bits(v*v,(n-1) >> 1);
 		else return fast_exp_bits(v*v,n >>1 );	
 	}
+
+	unsigned int countBits(unsigned int n)
+	{
+   		unsigned int count = 0;
+   		while (n)
+   		{
+        	count++;
+        	n >>= 1;
+    	}
+    	return count;
+	}
+  
+	int mod_MersenneBits(unsigned int v, unsigned int K, bool neg){
+		//K = block_size
+		// p = a prime! 
+		//if(neg) p = 2^K - 1
+		//else    p = 2^K + 1
+
+		unsigned int exponent = countBits(v);
+		unsigned int nblocks = (exponent/K) + 1;
+
+		int sum = 0;
+		bool even_blocknum= true;
+		while(v) 
+		{
+			auto v2 = v >> K;
+			auto w = v2 << K;
+			if(even_blocknum || neg){
+				sum += (v ^ w);
+			}
+			else {
+				sum -= ( v ^ w);
+			}
+			even_blocknum = !even_blocknum;
+			v = v2;
+		} 
+		return sum;
+
+
+	}
+
 }
 #endif
