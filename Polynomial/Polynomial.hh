@@ -306,12 +306,6 @@ public:
 				auto P=std::max(0, i-that.degree() );
 				auto Q=std::min(i,deg_a );
 				auto QR=std::max(0,that.degree()-i );
-				//for(auto j=P; j<= Q; j++) a[i]+=(*this)[j]*that[i-j];
-				//auto jt=this->get_coeff().begin()+P;
-				//auto j=P;
-				//for(; jt<= this->get_coeff().begin()+Q; jt++, j++) a[i]+=(*jt)*that[i-j];
-				//auto it=that.get_coeff().rbegin() + QR;
-				//for(auto jt=this->get_coeff().begin()+P ; jt<= this->get_coeff().begin()+Q; jt++, it++) a[i]+=(*jt)*(*it);
 				auto it=that.crbegin() + QR;
 				for(auto jt=begin()+P ; jt<= begin()+Q; jt++, it++) a[i]+=(*jt)*(*it);
 			}
@@ -337,37 +331,6 @@ public:
 		return *this;
 	};
 };
-
-/**
-template<class T> 
-inline void quot_rem1(const Polynomial<T>& A, const Polynomial<T>& B, 
-									Polynomial<T>& Q, Polynomial<T>& R)
-{
-	Q.reset();
-	R.reset();
-	Polynomial<T> AA(A);
-	
-	auto k=A.degree() - B.degree();
-	Q.resize(k + 1);
-	
-	for_each(Q.rbegin(),Q.rend(), [&](T& q)
-		{
-			Polynomial<T> BB=B;
-			BB.shift_fwd(k);
-			T rat=( AA.lcoeff()/BB.lcoeff() );
-			for_each(BB.begin(), BB.end(), [&](T& b)
-				{
-					b*=rat;
-				});
-			std::transform (AA.begin(), AA.end(), BB.begin(), AA.begin(), std::minus<T>());
-			AA.pop_back();
-			q=rat;
-			k--;
-		} );
-	
-	R = A - Q*B;
-};
-*/
 
 template<class T> 
 inline Polynomial<T> operator+(const Polynomial<T>& lhs, const Polynomial<T>& rhs){
