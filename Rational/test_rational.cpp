@@ -1,3 +1,10 @@
+/**
+description : Tests for Rational class
+author      : bveitch
+version     : 1.0
+project     : AlgebraicTemplateLibrary
+date        : Sunday 28th February  
+*/
 
 #include <iostream>
 #include <fstream>
