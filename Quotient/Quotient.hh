@@ -1,3 +1,11 @@
+/**
+description : Quotient on ring
+author      : bveitch
+version     : 1.0
+project     : AlgebraicTemplateLibrary
+date        : Sunday 28th February  
+*/
+
 #ifndef QUOTIENT_HH
 #define QUOTIENT_HH
 
@@ -6,6 +14,7 @@
 #include <sstream>
 #include <iostream>
 #include "../Utilities/NumTheoryUtils.hh"
+
 
 template <class T>
 class Quotient{

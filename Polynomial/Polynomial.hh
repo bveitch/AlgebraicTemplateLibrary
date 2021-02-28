@@ -1,3 +1,11 @@
+/**
+description : Polynomial class
+author      : bveitch
+version     : 1.0
+project     : AlgebraicTemplateLibrary
+date        : Sunday 28th February  
+*/
+
 #ifndef POLYNOMIAL_HH
 #define POLYNOMIAL_HH
 
@@ -7,7 +15,7 @@
 #include <functional>   // std::minus
 #include <numeric>      // std::accumulate
 #include <algorithm>  
- 
+
 template <class T>
 class Polynomial {
 	std::deque<T> coeff;

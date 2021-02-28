@@ -1,3 +1,11 @@
+/**
+description : Quotient on integral types
+author      : bveitch
+version     : 1.0
+project     : AlgebraicTemplateLibrary
+date        : Sunday 28th February  
+*/
+
 #ifndef RESIDUE_HH
 #define RESIDUE_HH
 

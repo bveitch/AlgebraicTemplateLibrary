@@ -1,3 +1,11 @@
+/**
+description : Rational structures on ring
+author      : bveitch
+version     : 1.0
+project     : AlgebraicTemplateLibrary
+date        : Sunday 28th February  
+*/
+
 #ifndef RATIONAL_HH
 #define RATIONAL_HH
 
@@ -6,25 +14,6 @@
 #include <sstream>
 #include <iostream>
 #include "../Utilities/NumTheoryUtils.hh"
-
-/* template<typename T>
-T gcd(T x, T y)
-{
-	if(x <0) x=-x;
-	if(y < 0) y=-y;
-	if(y == 0) return x;
-	else return gcd(y, x % y);
-};
-
-template <typename T> 
-int sgn(T val) {
-    return (T(0) < val) - (val < T(0));
-};
-
-template <typename T> 
-T abs(T val) {
-	return (val >=T(0)) ? val : -val;
-}; */
 
 template <class T>
 class Rational{
