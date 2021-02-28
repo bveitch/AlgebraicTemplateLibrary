@@ -11,7 +11,7 @@ ie Rational =type(a)/type(a).
 
 Quotients.hh: Quotients of rings
 
-ie Quoteint = type(a) % type(b).
+ie Quotient = type(a) % type(b).
 
 For convenience Residue.hh also computes the above but with type restricted to integral types.
 
