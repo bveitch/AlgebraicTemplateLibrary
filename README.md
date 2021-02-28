@@ -1,10 +1,10 @@
-#Algebraic Template Library
+# Algebraic Template Library
 ******************************************************************************************************
 
 Header files for algebraic structures and symbolic computation in C++.
 Attempts algebraic completeness through generic programming and operator overloading. 
 Currently supported:
-********************
+
 
 Rational.hh:  rational types (ie fractional fields for rings),
 
@@ -22,6 +22,6 @@ With these once can build other Field types, eg rational functions, finite field
 ******************************************************************************************************
 
 Not implemented
-***************
+
 Quadratic rings/fields, Quaternions, Multi-varaiate polynomials & Grobner bases.
 Its a work in progress, happy for requests!
